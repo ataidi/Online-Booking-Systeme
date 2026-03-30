@@ -1,8 +1,12 @@
-from sqlalchemy import Column, Integer, String
-from connections import Base
+from sqlalchemy import Column, Integer, String , Decimal
+from connections import Base,
+from  datetime input datetime
 
-class Todo(Base):
+
+class online(Base):
     __tablename__="online_tbl"
     id=Column(Integer,primary_key=True,autoincrement=True)
-    title=Column(String(100))
-    description=Column(String(100))
+    email=Column(String(100)nullable=false)
+    location=Column(string(100)nullable=false)
+    title=Column(String(100)nullable=false)
+    phone=Column(string(100)nullable=false)
